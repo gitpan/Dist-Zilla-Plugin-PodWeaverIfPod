@@ -13,19 +13,15 @@
       "version" : "2"
    },
    "name" : "Dist-Zilla-Plugin-PodWeaverIfPod",
-   "no_index" : {
-      "directory" : [
-         "lib/Dist/Zilla/Plugin/PodWeaverIfPod/t",
-         "lib/Dist/Zilla/Plugin/PodWeaverIfPod/Test"
-      ],
-      "file" : [
-         "lib/Dist/Zilla/Plugin/PodWeaverIfPod/Util.pm"
-      ]
-   },
    "prereqs" : {
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla::Plugin::PodWeaver" : 0
          }
       },
       "test" : {
@@ -46,6 +42,6 @@
          "web" : "https://github.com/jonswar/perl-dzil-podweaverifpod"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 
